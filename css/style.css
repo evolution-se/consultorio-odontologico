@@ -2050,9 +2050,79 @@ html.js .reveal.visible {
     padding: var(--space-2) var(--space-3);
     font-size: 0.9rem;
   }
+
+  .header-cta {
+    display: none;
+  }
+}
+
+/* ---------- 34.1. RESPONSIVO PARA DISPOSITIVOS MÓVEIS ---------- */
+@media (max-width: 991.98px) {
+  .header .container {
+    justify-content: space-between;
+  }
+
+  .header-toggler {
+    display: flex;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin-left: 0;
+    padding: var(--space-3) var(--space-4) var(--space-5);
+    background: #fff;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    max-height: calc(100dvh - var(--header-height));
+    overflow-y: auto;
+  }
+
+  .header-nav.show {
+    display: flex;
+  }
+
+  .header-nav .header-nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: var(--space-3) var(--space-4);
+    font-size: 1rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .header-nav .header-nav-link.active::after {
+    display: none;
+  }
+
+  .header-nav .header-cta {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    margin-top: var(--space-4);
+  }
 }
 
 @media (max-width: 768px) {
+  .header-toggler {
+    display: flex;
+  }
+
+  .differentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
   /* Painel do menu mobile */
   .header-nav {
     display: none;
@@ -2138,6 +2208,10 @@ html.js .reveal.visible {
 }
 
 @media (max-width: 480px) {
+  .differentials-grid {
+    grid-template-columns: 1fr;
+  }
+
   .trust-bar .section-wrapper {
     grid-template-columns: 1fr;
   }
