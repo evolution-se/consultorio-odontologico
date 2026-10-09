@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="800" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Detalhe que reforça biossegurança">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E6B7A"/><stop offset="1" stop-color="#0A4F5B"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F2F8FA"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g1)" rx="24"/>
+  <rect width="100%" height="100%" fill="url(#g3)" rx="24" opacity="0.45"/>
+  <rect width="100%" height="100%" rx="16" fill="#3FB5A8" opacity="0.92"/>
+  <text x="50%" y="93%" text-anchor="middle" font-family="Inter,'Plus Jakarta Sans',sans-serif" font-size="22" font-weight="600" fill="#16323A" opacity="0.85">Detalhe que reforça biossegurança</text>
+</svg>

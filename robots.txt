@@ -1,0 +1,6 @@
+# Clínica Odontológica Alvorada — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.exemplo.com.br/sitemap.xml
